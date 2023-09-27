@@ -7,26 +7,45 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 ### Step1:
-<br>
+Read image and convert it to grayscale image.
 
 ### Step2:
-<br>
+Find the edges in the image using canny detector and display.
 
 ### Step3:
-<br>
+Detect points that form a line using HoughLinesP.
 
 ### Step4:
-<br>
+Draw lines on the image.
 
 ### Step5:
-<br>
+Display the result.
 
 
 ## Program:
-```Python
-
+```
+```
 # Read image and convert it to grayscale image
-
+```
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
+img=cv2.imread("central.jpg",0)
+img_c=cv2.imread("central.jpg",1)
+img_c=cv2.cvtColor(img_c,cv2.COLOR_BGR2RGB)
+gray=cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
+gray = cv2.GaussianBlur(gray,(3,3),0)
+plt.figure(figsize=(13,13))
+plt.subplot(1,2,1)
+plt.imshow(img_c)
+plt.title("Original Image")
+plt.axis("off")
+plt.subplot(1,2,2)
+plt.imshow(gray)
+plt.title("Gray Image")
+plt.axis("off")
+plt.show()
+```
 
 
 # Find the edges in the image using canny detector and display
