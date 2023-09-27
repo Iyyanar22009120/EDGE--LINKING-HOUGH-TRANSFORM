@@ -50,23 +50,17 @@ Anaconda - Python 3.7
 ## Output
 
 ### Input image and grayscale image
-<br>
-<br>
-<br>
-<br>
+![81](https://github.com/Iyyanar22009120/EDGE--LINKING-HOUGH-TRANSFORM/assets/118680259/aa36f273-a6ba-4654-bc19-1566d93f39c6)
+
 
 ### Canny Edge detector output
-<br>
-<br>
-<br>
-<br>
+
+![82](https://github.com/Iyyanar22009120/EDGE--LINKING-HOUGH-TRANSFORM/assets/118680259/95abd8c3-8a01-4104-84ab-a18295331eb7)
 
 
 ### Display the result of Hough transform
-<br>
-<br>
-<br>
-<br>
+
+![83](https://github.com/Iyyanar22009120/EDGE--LINKING-HOUGH-TRANSFORM/assets/118680259/9b61961c-913c-4d52-8069-a775d189d53b)
 
 
 
