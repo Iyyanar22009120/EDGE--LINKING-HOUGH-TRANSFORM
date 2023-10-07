@@ -24,6 +24,8 @@ Display the result.
 
 ## Program:
 ```
+DEVELOPED BY : IYYANAR S
+REG NO : 212222240036
 ```
 # Read image and convert it to grayscale image
 ```
@@ -49,19 +51,38 @@ plt.show()
 
 
 # Find the edges in the image using canny detector and display
+```
+canny=cv2.Canny(gray,120,150)
+plt.imshow(canny)
+plt.title("Canny Edge Detector")
+plt.axis("off")
+plt.show()
+```
 
 
 
 # Detect points that form a line using HoughLinesP
+```
+lines=cv2.HoughLinesP(canny,1,np.pi/180,threshold=80,minLineLength=50,maxLineGap=250)
+```
 
 
 
 # Draw lines on the image
-
+```
+for line in lines:
+    x1,y1,x2,y2=line[0]
+    cv2.line(img_c,(x1,y1),(x2,y2),(255,0,0),3)
+```
 
 
 # Display the result
-
+```
+plt.imshow(img_c)
+plt.title("Result Image")
+plt.axis("off")
+plt.show()
+```
 
 
 
